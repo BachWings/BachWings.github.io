@@ -172,8 +172,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>SpringBoot基础HTTP接口GET请求<br>    1、GET请求<br>        1、单一参数@RequestMapping(path = “/{id}”, method = RequestMethod.GET)<br>            1) public String getUser(@PathVariable String id ) {}</p>
-<pre><code>2）@RequestMapping(path = &quot;/{depid}/{userid}&quot;, method = RequestMethod.GET) 可以同时指定多个提交方法
+        <p>SpringBoot基础HTTP接口GET请求<br>    1、GET请求<br>    1、单一参数@RequestMapping(path = “/{id}”, method = RequestMethod.GET)</p>
+<pre><code>1) public String getUser(@PathVariable String id ) {}
+2）@RequestMapping(path = &quot;/{depid}/{userid}&quot;, method = RequestMethod.GET) 可以同时指定多个提交方法
 getUser(@PathVariable(&quot;depid&quot;) String departmentID,@PathVariable(&quot;userid&quot;) String userid)
 3）一个顶俩
 @GetMapping = @RequestMapping(method = RequestMethod.GET)

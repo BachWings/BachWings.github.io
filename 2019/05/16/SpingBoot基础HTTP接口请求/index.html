@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>SpingBoot基础HTTP接口请求 | Fun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SpringBoot基础HTTP接口GET请求    1、GET请求        1、单一参数@RequestMapping(path = “/{id}”, method = RequestMethod.GET)            1) public String getUser(@PathVariable String id ) {} 2）@RequestMapping(path = &amp;q">
+  <meta name="description" content="SpringBoot基础HTTP接口GET请求    1、GET请求    1、单一参数@RequestMapping(path = “/{id}”, method = RequestMethod.GET) 1) public String getUser(@PathVariable String id ) {} 2）@RequestMapping(path = &amp;quot;/{depid}/{u">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpingBoot基础HTTP接口请求">
 <meta property="og:url" content="http://yoursite.com/2019/05/16/SpingBoot基础HTTP接口请求/index.html">
 <meta property="og:site_name" content="Fun">
-<meta property="og:description" content="SpringBoot基础HTTP接口GET请求    1、GET请求        1、单一参数@RequestMapping(path = “/{id}”, method = RequestMethod.GET)            1) public String getUser(@PathVariable String id ) {} 2）@RequestMapping(path = &amp;q">
+<meta property="og:description" content="SpringBoot基础HTTP接口GET请求    1、GET请求    1、单一参数@RequestMapping(path = “/{id}”, method = RequestMethod.GET) 1) public String getUser(@PathVariable String id ) {} 2）@RequestMapping(path = &amp;quot;/{depid}/{u">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-16T03:29:42.859Z">
+<meta property="og:updated_time" content="2019-05-16T03:31:10.046Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpingBoot基础HTTP接口请求">
-<meta name="twitter:description" content="SpringBoot基础HTTP接口GET请求    1、GET请求        1、单一参数@RequestMapping(path = “/{id}”, method = RequestMethod.GET)            1) public String getUser(@PathVariable String id ) {} 2）@RequestMapping(path = &amp;q">
+<meta name="twitter:description" content="SpringBoot基础HTTP接口GET请求    1、GET请求    1、单一参数@RequestMapping(path = “/{id}”, method = RequestMethod.GET) 1) public String getUser(@PathVariable String id ) {} 2）@RequestMapping(path = &amp;quot;/{depid}/{u">
   
     <link rel="alternative" href="/atom.xml" title="Fun" type="application/atom+xml">
   
@@ -174,8 +174,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>SpringBoot基础HTTP接口GET请求<br>    1、GET请求<br>        1、单一参数@RequestMapping(path = “/{id}”, method = RequestMethod.GET)<br>            1) public String getUser(@PathVariable String id ) {}</p>
-<pre><code>2）@RequestMapping(path = &quot;/{depid}/{userid}&quot;, method = RequestMethod.GET) 可以同时指定多个提交方法
+        <p>SpringBoot基础HTTP接口GET请求<br>    1、GET请求<br>    1、单一参数@RequestMapping(path = “/{id}”, method = RequestMethod.GET)</p>
+<pre><code>1) public String getUser(@PathVariable String id ) {}
+2）@RequestMapping(path = &quot;/{depid}/{userid}&quot;, method = RequestMethod.GET) 可以同时指定多个提交方法
 getUser(@PathVariable(&quot;depid&quot;) String departmentID,@PathVariable(&quot;userid&quot;) String userid)
 3）一个顶俩
 @GetMapping = @RequestMapping(method = RequestMethod.GET)
