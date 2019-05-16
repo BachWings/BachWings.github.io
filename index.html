@@ -152,6 +152,83 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-SpingBoot基础HTTP接口请求" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/16/SpingBoot基础HTTP接口请求/">SpingBoot基础HTTP接口请求</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/16/SpingBoot基础HTTP接口请求/" class="archive-article-date">
+  	<time datetime="2019-05-16T03:27:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>SpringBoot基础HTTP接口GET请求<br>    1、GET请求<br>        1、单一参数@RequestMapping(path = “/{id}”, method = RequestMethod.GET)<br>            1) public String getUser(@PathVariable String id ) {}</p>
+<pre><code>2）@RequestMapping(path = &quot;/{depid}/{userid}&quot;, method = RequestMethod.GET) 可以同时指定多个提交方法
+getUser(@PathVariable(&quot;depid&quot;) String departmentID,@PathVariable(&quot;userid&quot;) String userid)
+3）一个顶俩
+@GetMapping = @RequestMapping(method = RequestMethod.GET)
+@PostMapping = @RequestMapping(method = RequestMethod.POST)
+@PutMapping = @RequestMapping(method = RequestMethod.PUT)
+@DeleteMapping = @RequestMapping(method = RequestMethod.DELETE)
+4）@RequestParam(value = &quot;name&quot;, required = true)
+    可以设置默认值，比如分页 
+4)@RequestBody 请求体映射实体类
+    需要指定http头为 content-type为application/json charset=utf-8
+5）@RequestHeader 请求头，比如鉴权
+    @RequestHeader(&quot;access_token&quot;) String accessToken
+6）HttpServletRequest request自动注入获取参数
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/16/SpingBoot基础HTTP接口请求/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
